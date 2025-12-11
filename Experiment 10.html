@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Navigation Menu Example</title> 
+ 
+    <style> 
+        header { 
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            flex-direction: column;
+            background: rgb(14, 13, 13); 
+            color: white; 
+            padding: 20px; 
+            font-size: 24px; 
+        } 
+ 
+        nav { 
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 10px; 
+            
+        } 
+        .shop { 
+            display: flex;
+            margin-right: 15px;
+            color: rgb(255, 255, 255); 
+        } 
+ 
+        nav a.link { 
+            display: inline;
+            text-align: center; 
+            margin-right: 15px; 
+            color: rgb(255, 255, 255); 
+            text-decoration: none;
+        } 
+        @media (max-width:700px){
+        header{flex-wrap: wrap;}
+        .shop{flex-wrap: wrap;}
+        }
+    </style> 
+</head> 
+ 
+<body> 
+ 
+    <header>
+        <nav class="wrap">
+        <div class="shop">ShopEase</div>
+        <a href="Home.html" class="link">Home</a> 
+        <a href="About.html" class="link">About</a> 
+        <a href="Contact.html" class="link">Contact</a> 
+    </nav> 
+    </header> 
+ 
